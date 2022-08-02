@@ -5,7 +5,9 @@ export const useFetch = () => {
 
     let url2 = process.env.HEROKU || 'http://localhost:3002/'
     console.log( process.env.HEROKU )
-    
+    console.log( process.env.heroku )
+    console.log( process.env )
+
     let url = 'https://fluffy-triage-api.herokuapp.com/'
 
     useEffect( () => {
