@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 export const useFetch = () => {
     const [fetchData, setFetchData] = useState({  loading : false })
 
-    let url2 = process.env.HEROKU || 'http://localhost:3002/'
-    console.log( process.env.HEROKU )
-    console.log( process.env.heroku )
-    console.log( process.env )
+    let url2 = import.meta.env.HEROKU || 'http://localhost:3002/'
+    console.log( import.meta.env.HEROKU )
+    console.log( import.meta.env.heroku )
+    console.log( import.meta.env )
 
     let url = 'https://fluffy-triage-api.herokuapp.com/'
 
