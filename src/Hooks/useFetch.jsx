@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 export const useFetch = () => {
     const [fetchData, setFetchData] = useState({  loading : false })
 
-    let url = process.env.heroku || 'http://localhost:3002/'
+    let url2 = process.env.HEROKU || 'http://localhost:3002/'
+    console.log( process.env.HEROKU )
+    
+    let url = 'https://fluffy-triage-api.herokuapp.com/'
 
     useEffect( () => {
         let datos
@@ -15,7 +18,7 @@ export const useFetch = () => {
         .finally( (dat) => {
             setFetchData({...datos, loading : true})
         })
-        
+
     }, []);
 
     
