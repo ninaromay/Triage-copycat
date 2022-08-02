@@ -9,9 +9,6 @@ import { useState, useEffect } from 'react'
 import { Triage } from './Components/Triage'
 import { useFetch } from './Hooks/useFetch'
 
-import dotenv from 'dotenv'
-let environment = dotenv.config().parsed
-
 const App = () =>{
 
   const { data : datos, loading , error} = useFetch(bbdd)
