@@ -4,9 +4,8 @@ export const useFetch = () => {
     const [fetchData, setFetchData] = useState({  loading : false })
 
     let url2 = import.meta.env.HEROKU || 'http://localhost:3002/'
-    console.log( import.meta.env.HEROKU )
-    console.log( import.meta.env.heroku )
-    console.log( import.meta.env )
+    console.log( import.meta.env.VITE_HEROKU )
+    console.log( import.meta )
 
     let url = 'https://fluffy-triage-api.herokuapp.com/'
 
